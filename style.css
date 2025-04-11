@@ -84,10 +84,13 @@ p {
     grid-template-columns: repeat(4, 290px);
     grid-template-rows: repeat(2, auto);
     gap: 2rem;
+    grid-template-areas:
+        "d d jw k"
+        "jh p p k";
 }
 
 .grid-card .daniel-clifford {
-    grid-column: 1 / span 2;
+    grid-area: d;
     background-image: url("./images/bg-pattern-quotation.svg");
     background-repeat: no-repeat;
     background-position: 80% 0;
@@ -104,6 +107,7 @@ p {
 }
 
 .grid-card .jonathan-walters {
+    grid-area: jw;
     background-color: var(--Grey-500);
 }
 
@@ -113,8 +117,7 @@ p {
 }
 
 .grid-card .kira-whittle {
-    grid-column: 4;
-    grid-row: 1 / span 2;
+    grid-area: k;
     background-color: var(--White);
     color: var(--Grey-500);
 }
@@ -127,13 +130,13 @@ p {
 }
 
 .grid-card .jeanette-harmon {
+    grid-area: jh;
     background-color: var(--White);
     color: var(--Grey-500);
 }
 
 .grid-card .patrick-abrams {
-    grid-row: 2;
-    grid-column: 2 / span 2;
+    grid-area: p;
     background-color: var(--Dark-blue);
 }
 
@@ -149,29 +152,31 @@ p {
     }
     .container .grid-card {
         grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            "d d jw jw"
+            "jh jh p p"
+            "k k k k";
     }
 
     .grid-card .daniel-clifford {
-        grid-column: 1 / span 2;
+        grid-area: d;
     }
 
     .grid-card .jonathan-walters {
-        grid-column: 3 / span 4;
+        grid-area: jw;
     }
 
     .grid-card .jeanette-harmon {
-        grid-row: 2;
-        grid-column: 1 / span 2;
+        grid-area: jh;
     }
 
     .grid-card .patrick-abrams {
-        grid-row: 2;
-        grid-column: 3 / span 4;
+        grid-area: p;
     }
 
     .grid-card .kira-whittle {
-        grid-row: 3;
-        grid-column: 1 / span 4;
+        grid-area: k;
     }
 }
 
