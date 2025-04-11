@@ -151,12 +151,12 @@ p {
         margin: 50px 30px;
     }
     .container .grid-card {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, auto);
         grid-template-areas:
-            "d d jw jw"
-            "jh jh p p"
-            "k k k k";
+            "d jw"
+            "jh p"
+            "k k";
     }
 
     .grid-card .daniel-clifford {
