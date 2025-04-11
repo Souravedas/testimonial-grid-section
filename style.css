@@ -23,7 +23,8 @@
 }
 
 body {
-    background-color: var(--Grey-100);
+    background-color: hsl(0, 0%, 95%);
+    /* background-color: var(--Grey-100); */
     font-family: var(--font);
 }
 
